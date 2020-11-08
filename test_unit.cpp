@@ -31,7 +31,7 @@ void test_GetNbjoursInit(void){
 
 void test_getLocalTime(void){
     TimeConversion c;
-	std::regex rgx ("\\b(16)([^ ]*)"); 
+	std::regex rgx ("\\b(20)([^ ]*)"); 
     TEST_CHECK_(std::regex_search(c.getLocalTime(),rgx) , "Heure actuelle : %S", c.getLocalTime());
 }
 
@@ -49,7 +49,7 @@ TEST_LIST = {
     {"4-Resultat calculerUptimeIdle1(6945200.26)", test_calculerUptimeIdle4},
     {"5-Resultat calculerUptimeIdle1(15005117.05)", test_calculerUptimeIdle5},
     {"6-int Verification Nombre Jours Debut", test_GetNbjoursInit},
-	{"7-Verification Heure systeme commence par 16", test_getLocalTime},
+	{"7-Verification Heure systeme commence par 20", test_getLocalTime},
 	{"8-Verification Taille Heure systeme", test_getLocalTimeLength},
     
     {0}/*must be terminated by 0*/
