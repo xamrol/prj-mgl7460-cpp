@@ -8,6 +8,10 @@ public:
     TimeConversion();
     std::string calculerUptimeIdle(double const& timevalue);
     std::string getLocalTime();
+    int GetNbjours();
+    int GetNbHeures();
+    int GetNbMinutes();
+    int GetNbSecondes();
 private:
     int nbJours;
     int nbHeures;
