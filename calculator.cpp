@@ -131,3 +131,16 @@ string TimeConversion::getLocalTime()
 
     return actualLocalTime;
 }
+
+int TimeConversion::GetNbjours(){
+    return nbJours;
+}
+int TimeConversion::GetNbMinutes(){
+    return nbMinutes;
+}
+int TimeConversion::GetNbSecondes(){
+    return nbSecondes;
+}
+int TimeConversion::GetNbHeures(){
+    return nbHeures;
+}
